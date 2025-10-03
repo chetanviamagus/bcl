@@ -26,21 +26,21 @@ function AdminPage() {
 
   const getRoleColor = (role: string) => {
     const colors = {
-      'Batsman': 'bg-green-100 text-green-800',
-      'Bowler': 'bg-red-100 text-red-800',
-      'All-rounder': 'bg-blue-100 text-blue-800',
-      'Wicket-keeper': 'bg-purple-100 text-purple-800'
+      'Batsman': 'bg-primary-green-600 text-white',
+      'Bowler': 'bg-red-600 text-white',
+      'All-rounder': 'bg-blue-600 text-white',
+      'Wicket-keeper': 'bg-purple-600 text-white'
     }
-    return colors[role as keyof typeof colors] || 'bg-gray-100 text-gray-800'
+    return colors[role as keyof typeof colors] || 'bg-gray-600 text-white'
   }
 
   const getStatusColor = (status: string) => {
     const colors = {
-      'available': 'bg-yellow-100 text-yellow-800',
-      'sold': 'bg-green-100 text-green-800',
-      'unsold': 'bg-red-100 text-red-800'
+      'available': 'bg-gold-500 text-gray-900',
+      'sold': 'bg-primary-green-600 text-white',
+      'unsold': 'bg-red-600 text-white'
     }
-    return colors[status as keyof typeof colors] || 'bg-gray-100 text-gray-800'
+    return colors[status as keyof typeof colors] || 'bg-gray-600 text-white'
   }
 
   const handleEditPlayer = (player: AuctionPlayer) => {
@@ -105,7 +105,7 @@ function AdminPage() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-3xl font-bold text-gray-900">Auction Admin Panel</h1>
-              <p className="text-gray-600 mt-1">Manage player prices and team assignments</p>
+              <p className="text-gray-900-light mt-1">Manage player prices and team assignments</p>
             </div>
             <div className="flex space-x-3">
               <button
@@ -157,19 +157,19 @@ function AdminPage() {
                             <span className={`px-2 py-1 rounded text-sm font-medium ${getStatusColor(player.status)}`}>
                               {player.status.toUpperCase()}
                             </span>
-                            <span className="text-sm text-gray-600">Age: {player.age}</span>
+                            <span className="text-sm text-gray-900-light">Age: {player.age}</span>
                           </div>
                         </div>
                       </div>
                       
                       <div className="flex items-center space-x-6">
                         <div className="text-right">
-                          <p className="text-sm text-gray-600">Base Price</p>
-                          <p className="font-semibold text-green-600">{formatCurrency(player.basePrice)}</p>
+                          <p className="text-sm text-gray-900-light">Base Price</p>
+                          <p className="font-bold text-lg text-primary-green-600">{formatCurrency(player.basePrice)}</p>
                         </div>
                         <div className="text-right">
-                          <p className="text-sm text-gray-600">Current Bid</p>
-                          <p className="font-semibold text-blue-600">
+                          <p className="text-sm text-gray-900-light">Current Bid</p>
+                          <p className="font-bold text-lg text-orange-600">
                             {player.currentBid > 0 ? formatCurrency(player.currentBid) : 'No Bids'}
                           </p>
                         </div>
@@ -210,7 +210,7 @@ function AdminPage() {
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
                       <div
-                        className="bg-green-500 h-2 rounded-full"
+                        className="bg-primary-green-500 h-2 rounded-full"
                         style={{ width: `${(budget.spentAmount / budget.totalBudget) * 100}%` }}
                       ></div>
                     </div>
@@ -235,7 +235,7 @@ function AdminPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Sold:</span>
-                  <span className="font-semibold text-green-600">
+                  <span className="font-semibold text-primary-green-600">
                     {players.filter(p => p.status === 'sold').length}
                   </span>
                 </div>

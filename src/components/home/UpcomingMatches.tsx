@@ -16,7 +16,7 @@ function UpcomingMatches() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-cricket-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Upcoming Matches
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -38,7 +38,7 @@ function UpcomingMatches() {
                 <div className="card card-hover h-full">
                   {/* Match Header */}
                   <div className="text-center mb-6">
-                    <div className="text-sm text-cricket-green font-medium mb-2">
+                    <div className="text-sm text-primary-green font-medium mb-2">
                       {new Date(match.date).toLocaleDateString('en-US', {
                         weekday: 'long',
                         year: 'numeric',
@@ -46,7 +46,7 @@ function UpcomingMatches() {
                         day: 'numeric'
                       })}
                     </div>
-                    <div className="text-lg font-bold text-cricket-dark">
+                    <div className="text-lg font-bold text-gray-900">
                       {match.time}
                     </div>
                   </div>
@@ -55,12 +55,12 @@ function UpcomingMatches() {
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-cricket-green rounded-full flex items-center justify-center">
+                        <div className="w-8 h-8 bg-primary-green rounded-full flex items-center justify-center">
                           <span className="text-white text-sm font-bold">
                             {match.homeTeam.split(' ').map(word => word[0]).join('')}
                           </span>
                         </div>
-                        <span className="font-medium text-cricket-dark">
+                        <span className="font-medium text-gray-900">
                           {match.homeTeam}
                         </span>
                       </div>
@@ -72,12 +72,12 @@ function UpcomingMatches() {
 
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
-                        <div className="w-8 h-8 bg-cricket-gold rounded-full flex items-center justify-center">
-                          <span className="text-cricket-dark text-sm font-bold">
+                        <div className="w-8 h-8 bg-gold rounded-full flex items-center justify-center">
+                          <span className="text-gray-900 text-sm font-bold">
                             {match.awayTeam.split(' ').map(word => word[0]).join('')}
                           </span>
                         </div>
-                        <span className="font-medium text-cricket-dark">
+                        <span className="font-medium text-gray-900">
                           {match.awayTeam}
                         </span>
                       </div>
@@ -92,13 +92,13 @@ function UpcomingMatches() {
 
                   {/* Toss Info */}
                   {match.tossWinner && (
-                    <div className="text-center text-xs text-gray-500 bg-cricket-light rounded-lg p-2">
+                    <div className="text-center text-xs text-gray-500 bg-gray-50 rounded-lg p-2">
                       Toss: {match.tossWinner} chose to {match.tossDecision}
                     </div>
                   )}
 
                   {/* Hover Effect */}
-                  <div className="absolute inset-0 bg-cricket-green/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                  <div className="absolute inset-0 bg-primary-green/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 </div>
               </Link>
             </motion.div>

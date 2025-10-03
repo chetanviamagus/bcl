@@ -99,8 +99,8 @@ function MobileMenu({ onClose }: MobileMenuProps) {
                   onClick={onClose}
                   className={`block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200 ${
                     isActive(item.href)
-                      ? 'text-cricket-green bg-cricket-light'
-                      : 'text-gray-700 hover:text-cricket-green hover:bg-cricket-light'
+                      ? 'text-primary-green bg-gray-50'
+                      : 'text-gray-700 hover:text-primary-green hover:bg-gray-50'
                   }`}
                 >
                   {item.label}
@@ -109,7 +109,7 @@ function MobileMenu({ onClose }: MobileMenuProps) {
                 {item.children && (
                   <button
                     onClick={() => toggleExpanded(item.label)}
-                    className="p-2 text-gray-500 hover:text-cricket-green"
+                    className="p-2 text-gray-500 hover:text-primary-green"
                   >
                     <motion.svg
                       animate={{ rotate: expandedItems.includes(item.label) ? 180 : 0 }}
@@ -148,7 +148,7 @@ function MobileMenu({ onClose }: MobileMenuProps) {
                       <Link
                         to={child.href}
                         onClick={onClose}
-                        className="block px-3 py-2 text-sm text-gray-600 hover:text-cricket-green hover:bg-cricket-light rounded-md transition-colors duration-200"
+                        className="block px-3 py-2 text-sm text-gray-600 hover:text-primary-green hover:bg-gray-50 rounded-md transition-colors duration-200"
                       >
                         {child.label}
                       </Link>

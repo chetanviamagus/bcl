@@ -13,15 +13,15 @@ function Statistics() {
       title: 'Total Runs',
       value: totalRuns.toLocaleString(),
       icon: 'sports_cricket',
-      color: 'text-cricket-green',
-      bgColor: 'bg-cricket-green/10'
+      color: 'text-primary-green',
+      bgColor: 'bg-primary-green/10'
     },
     {
       title: 'Total Wickets',
       value: totalWickets.toLocaleString(),
       icon: 'sports_handball',
-      color: 'text-cricket-gold',
-      bgColor: 'bg-cricket-gold/10'
+      color: 'text-gold',
+      bgColor: 'bg-gold/10'
     },
     {
       title: 'Matches Played',
@@ -49,7 +49,7 @@ function Statistics() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-cricket-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             League Statistics
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -99,28 +99,28 @@ function Statistics() {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <div className="bg-cricket-light rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-cricket-dark text-center mb-8">
+          <div className="bg-gray-50 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
               Season Highlights
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-cricket-green mb-2">
+                <div className="text-4xl font-bold text-primary-green mb-2">
                   {Math.max(...mockTeams.map(team => team.stats.points))}
                 </div>
                 <div className="text-gray-600">Highest Points</div>
-                <div className="text-sm text-cricket-dark font-medium">
+                <div className="text-sm text-gray-900 font-medium">
                   {mockTeams.find(team => team.stats.points === Math.max(...mockTeams.map(t => t.stats.points)))?.name}
                 </div>
               </div>
               
               <div className="text-center">
-                <div className="text-4xl font-bold text-cricket-gold mb-2">
+                <div className="text-4xl font-bold text-gold mb-2">
                   {Math.max(...mockPlayers.map(player => player.stats.runs))}
                 </div>
                 <div className="text-gray-600">Most Runs</div>
-                <div className="text-sm text-cricket-dark font-medium">
+                <div className="text-sm text-gray-900 font-medium">
                   {mockPlayers.find(player => player.stats.runs === Math.max(...mockPlayers.map(p => p.stats.runs)))?.name}
                 </div>
               </div>
@@ -130,7 +130,7 @@ function Statistics() {
                   {Math.max(...mockPlayers.map(player => player.stats.wickets))}
                 </div>
                 <div className="text-gray-600">Most Wickets</div>
-                <div className="text-sm text-cricket-dark font-medium">
+                <div className="text-sm text-gray-900 font-medium">
                   {mockPlayers.find(player => player.stats.wickets === Math.max(...mockPlayers.map(p => p.stats.wickets)))?.name}
                 </div>
               </div>

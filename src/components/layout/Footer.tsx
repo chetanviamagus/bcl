@@ -60,7 +60,7 @@ function Footer() {
   ]
 
   return (
-    <footer className="bg-cricket-dark text-white">
+    <footer className="bg-dark text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -71,7 +71,7 @@ function Footer() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <h3 className="text-lg font-semibold mb-4 text-cricket-gold">
+              <h3 className="text-lg font-semibold mb-4 text-gold">
                 {section.title}
               </h3>
               <ul className="space-y-2">
@@ -79,7 +79,7 @@ function Footer() {
                   <li key={link.href}>
                     <Link
                       to={link.href}
-                      className="text-gray-300 hover:text-cricket-gold transition-colors duration-200 text-sm"
+                      className="text-gray-800 hover:text-gold transition-colors duration-200 text-sm"
                     >
                       {link.label}
                     </Link>
@@ -97,7 +97,7 @@ function Footer() {
           transition={{ delay: 0.4 }}
           className="mt-12 pt-8 border-t border-gray-700"
         >
-          <h3 className="text-lg font-semibold mb-6 text-cricket-gold text-center">
+          <h3 className="text-lg font-semibold mb-6 text-gold text-center">
             Our Partners
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
@@ -129,7 +129,7 @@ function Footer() {
           <div className="flex justify-center space-x-6 mb-4">
             <a
               href="#"
-              className="text-gray-300 hover:text-cricket-gold transition-colors duration-200"
+              className="text-gray-300 hover:text-gold transition-colors duration-200"
               aria-label="Facebook"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -138,7 +138,7 @@ function Footer() {
             </a>
             <a
               href="#"
-              className="text-gray-300 hover:text-cricket-gold transition-colors duration-200"
+              className="text-gray-300 hover:text-gold transition-colors duration-200"
               aria-label="Twitter"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -147,7 +147,7 @@ function Footer() {
             </a>
             <a
               href="#"
-              className="text-gray-300 hover:text-cricket-gold transition-colors duration-200"
+              className="text-gray-300 hover:text-gold transition-colors duration-200"
               aria-label="Instagram"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -156,7 +156,7 @@ function Footer() {
             </a>
             <a
               href="#"
-              className="text-gray-300 hover:text-cricket-gold transition-colors duration-200"
+              className="text-gray-300 hover:text-gold transition-colors duration-200"
               aria-label="YouTube"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

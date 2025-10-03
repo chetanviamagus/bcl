@@ -1,0 +1,14 @@
+Missing Slides Extraction Summary
+==================================================
+
+Missing slides processed: [22, 32, 46, 84, 100]
+New players found: 5
+Total players after merge: 145
+Extraction date: 2025-10-03 22:06:07
+
+New players found:
+  Slide 22: Sanjay Kumar - Batsman - Age: 26
+  Slide 32: Anil - All Rounder - Age: 23
+  Slide 46: Chethan - Batsman - Age: 31
+  Slide 84: Basavaraj - All Rounder - Age: 18
+  Slide 100: Vishwas R - All Rounder - Age: 0

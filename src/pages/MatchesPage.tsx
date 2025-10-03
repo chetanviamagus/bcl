@@ -9,7 +9,7 @@ function MatchesPage() {
   const liveMatches = mockMatches.filter(match => match.status === 'live')
 
   return (
-    <div className="min-h-screen bg-cricket-light py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -18,7 +18,7 @@ function MatchesPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-cricket-dark mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Matches
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -34,7 +34,7 @@ function MatchesPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-12"
           >
-            <h2 className="text-2xl font-bold text-cricket-dark mb-6 flex items-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
               <span className="w-3 h-3 bg-red-500 rounded-full mr-3 animate-pulse"></span>
               Live Matches
             </h2>
@@ -54,14 +54,14 @@ function MatchesPage() {
                           <span className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
                           LIVE
                         </div>
-                        <div className="text-lg font-bold text-cricket-dark">
+                        <div className="text-lg font-bold text-gray-900">
                           {match.homeTeam} vs {match.awayTeam}
                         </div>
                         <div className="text-sm text-gray-600">{match.venue}</div>
                       </div>
                       {match.score && (
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-cricket-green">
+                          <div className="text-2xl font-bold text-primary-green">
                             {match.score.homeTeam.runs}/{match.score.homeTeam.wickets}
                           </div>
                           <div className="text-sm text-gray-600">
@@ -84,7 +84,7 @@ function MatchesPage() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-12"
         >
-          <h2 className="text-2xl font-bold text-cricket-dark mb-6">Upcoming Matches</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Upcoming Matches</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {upcomingMatches.map((match, index) => (
               <motion.div
@@ -97,21 +97,21 @@ function MatchesPage() {
                 <Link to="/matches/$matchId" params={{ matchId: match.id }}>
                   <div className="card card-hover h-full">
                     <div className="text-center mb-4">
-                      <div className="text-sm text-cricket-green font-medium mb-2">
+                      <div className="text-sm text-primary-green font-medium mb-2">
                         {new Date(match.date).toLocaleDateString('en-US', {
                           weekday: 'long',
                           month: 'short',
                           day: 'numeric'
                         })}
                       </div>
-                      <div className="text-lg font-bold text-cricket-dark">
+                      <div className="text-lg font-bold text-gray-900">
                         {match.homeTeam} vs {match.awayTeam}
                       </div>
                       <div className="text-sm text-gray-600">{match.venue}</div>
                       <div className="text-sm text-gray-600">{match.time}</div>
                     </div>
                     {match.tossWinner && (
-                      <div className="text-center text-xs text-gray-500 bg-cricket-light rounded-lg p-2">
+                      <div className="text-center text-xs text-gray-500 bg-gray-50 rounded-lg p-2">
                         Toss: {match.tossWinner} chose to {match.tossDecision}
                       </div>
                     )}
@@ -128,7 +128,7 @@ function MatchesPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <h2 className="text-2xl font-bold text-cricket-dark mb-6">Recent Results</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Recent Results</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {completedMatches.map((match, index) => (
               <motion.div
@@ -147,14 +147,14 @@ function MatchesPage() {
                           day: 'numeric'
                         })}
                       </div>
-                      <div className="text-lg font-bold text-cricket-dark">
+                      <div className="text-lg font-bold text-gray-900">
                         {match.homeTeam} vs {match.awayTeam}
                       </div>
                       <div className="text-sm text-gray-600">{match.venue}</div>
                     </div>
                     {match.score && (
                       <div className="text-center">
-                        <div className="text-lg font-bold text-cricket-green mb-2">
+                        <div className="text-lg font-bold text-primary-green mb-2">
                           {match.result}
                         </div>
                         <div className="text-sm text-gray-600">

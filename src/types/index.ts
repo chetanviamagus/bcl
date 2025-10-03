@@ -196,19 +196,17 @@ export interface Sponsor {
 export interface AuctionPlayer {
   id: string;
   name: string;
-  role: 'Batsman' | 'Bowler' | 'All-rounder' | 'Wicket-keeper';
+  role: 'Batsman' | 'Bowler' | 'All Rounder' | 'Wicket Keeper';
   age: number;
-  nationality: string;
-  battingStyle: string;
-  bowlingStyle: string;
+  mobile: string;
   basePrice: number;
   currentBid: number;
-  soldTo?: string; // Team ID
-  soldPrice?: number;
   status: 'available' | 'sold' | 'unsold';
   photo: string;
-  stats: PlayerStats;
-  previousTeam?: string;
+  iconPlayer: 'Yes' | 'No';
+  soldTo?: string; // Team ID
+  soldPrice?: number;
+  teamLogo?: string;
 }
 
 export interface Bid {

@@ -16,7 +16,7 @@ function LatestNews() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-cricket-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Latest News
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -37,7 +37,7 @@ function LatestNews() {
               <Link to="/news/$newsId" params={{ newsId: article.id }}>
                 <div className="card card-hover h-full">
                   {/* Article Image */}
-                  <div className="aspect-video bg-gradient-to-br from-cricket-green to-green-800 rounded-lg mb-4 overflow-hidden">
+                  <div className="aspect-video bg-gradient-to-br from-primary-green to-primary-green-800 rounded-lg mb-4 overflow-hidden">
                     <div className="w-full h-full flex items-center justify-center">
                       <span className="material-icons text-white text-4xl">article</span>
                     </div>
@@ -52,7 +52,7 @@ function LatestNews() {
                       <span>{new Date(article.publishedAt).toLocaleDateString()}</span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-cricket-dark group-hover:text-cricket-green transition-colors duration-200 line-clamp-2">
+                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-green transition-colors duration-200 line-clamp-2">
                       {article.title}
                     </h3>
 
@@ -65,20 +65,20 @@ function LatestNews() {
                         article.category === 'announcement' 
                           ? 'bg-blue-100 text-blue-800'
                           : article.category === 'match-report'
-                          ? 'bg-green-100 text-green-800'
+                          ? 'bg-primary-green-100 text-primary-green-800'
                           : 'bg-gray-100 text-gray-800'
                       }`}>
                         {article.category.replace('-', ' ').toUpperCase()}
                       </span>
                       
-                      <span className="text-cricket-green text-sm font-medium group-hover:text-cricket-dark transition-colors duration-200">
+                      <span className="text-primary-green text-sm font-medium group-hover:text-gray-900 transition-colors duration-200">
                         Read More →
                       </span>
                     </div>
                   </div>
 
                   {/* Hover Effect */}
-                  <div className="absolute inset-0 bg-cricket-green/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                  <div className="absolute inset-0 bg-primary-green/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 </div>
               </Link>
             </motion.article>

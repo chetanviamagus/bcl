@@ -4,7 +4,7 @@ import { mockVideos } from '@/data/mockData'
 
 function VideosPage() {
   return (
-    <div className="min-h-screen bg-cricket-light py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,7 +12,7 @@ function VideosPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-cricket-dark mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Videos
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -30,7 +30,7 @@ function VideosPage() {
               className="group"
             >
               <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="aspect-video bg-gradient-to-br from-cricket-green to-green-800 relative overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-primary-green to-primary-green-800 relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <motion.div
                       whileHover={{ scale: 1.1 }}
@@ -44,13 +44,13 @@ function VideosPage() {
                     {video.duration}
                   </div>
                   
-                  <div className="absolute top-4 right-4 bg-cricket-gold text-cricket-dark px-2 py-1 rounded text-sm font-medium">
+                  <div className="absolute top-4 right-4 bg-gold text-gray-900 px-2 py-1 rounded text-sm font-medium">
                     {video.views.toLocaleString()} views
                   </div>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-cricket-gold transition-colors duration-200">
+                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-gold transition-colors duration-200">
                     {video.title}
                   </h3>
                   <p className="text-gray-300 text-sm mb-4">

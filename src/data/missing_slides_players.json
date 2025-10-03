@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Sanjay Kumar",
+    "slide_number": 22,
+    "category": "Batsman",
+    "age": "26",
+    "mobile": "9620191414",
+    "iconPlayer": "No"
+  },
+  {
+    "name": "Anil",
+    "slide_number": 32,
+    "category": "All Rounder",
+    "age": "23",
+    "mobile": "9901115633",
+    "iconPlayer": "No"
+  },
+  {
+    "name": "Chethan",
+    "slide_number": 46,
+    "category": "Batsman",
+    "age": "31",
+    "mobile": "9008796333",
+    "iconPlayer": "No"
+  },
+  {
+    "name": "Basavaraj",
+    "slide_number": 84,
+    "category": "All Rounder",
+    "age": "18",
+    "mobile": "9611144490",
+    "iconPlayer": "No"
+  },
+  {
+    "name": "Vishwas R",
+    "slide_number": 100,
+    "category": "All Rounder",
+    "age": "26",
+    "mobile": "7676762367",
+    "iconPlayer": "No"
+  }
+]

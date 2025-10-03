@@ -6,7 +6,7 @@ function MatchDetailPage() {
   const { matchId } = useParams({ from: '/matches/$matchId' })
 
   return (
-    <div className="min-h-screen bg-cricket-light py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,7 +14,7 @@ function MatchDetailPage() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-cricket-dark mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Match Details
           </h1>
           <p className="text-xl text-gray-600">

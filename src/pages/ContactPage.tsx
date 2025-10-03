@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 function ContactPage() {
   return (
-    <div className="min-h-screen bg-cricket-light py-12">
+    <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,7 +11,7 @@ function ContactPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-cricket-dark mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Contact Us
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -25,14 +25,14 @@ function ContactPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h2 className="text-3xl font-bold text-cricket-dark mb-6">Get in Touch</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-cricket-green rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-primary-green rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="material-icons text-white">location_on</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-cricket-dark mb-1">Address</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
                   <p className="text-gray-600">
                     Bellandur Cricket Ground<br />
                     Bellandur, Bangalore<br />
@@ -42,11 +42,11 @@ function ContactPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-cricket-gold rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="material-icons text-cricket-dark">phone</span>
+                <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="material-icons text-gray-900">phone</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-cricket-dark mb-1">Phone</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
                   <p className="text-gray-600">+91 98765 43210</p>
                 </div>
               </div>
@@ -56,7 +56,7 @@ function ContactPage() {
                   <span className="material-icons text-white">email</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-cricket-dark mb-1">Email</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
                   <p className="text-gray-600">info@bcl-cricket.com</p>
                 </div>
               </div>
@@ -66,7 +66,7 @@ function ContactPage() {
                   <span className="material-icons text-white">schedule</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-cricket-dark mb-1">Office Hours</h3>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Office Hours</h3>
                   <p className="text-gray-600">
                     Monday - Friday: 9:00 AM - 6:00 PM<br />
                     Saturday: 9:00 AM - 2:00 PM<br />
@@ -83,7 +83,7 @@ function ContactPage() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-white rounded-xl shadow-lg p-8"
           >
-            <h2 className="text-2xl font-bold text-cricket-dark mb-6">Send us a Message</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -93,7 +93,7 @@ function ContactPage() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cricket-green focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-green focus:border-transparent"
                   placeholder="Your full name"
                 />
               </div>
@@ -106,7 +106,7 @@ function ContactPage() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cricket-green focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-green focus:border-transparent"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -119,7 +119,7 @@ function ContactPage() {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cricket-green focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-green focus:border-transparent"
                   placeholder="What's this about?"
                 />
               </div>
@@ -132,7 +132,7 @@ function ContactPage() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cricket-green focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-green focus:border-transparent"
                   placeholder="Tell us more about your query..."
                 ></textarea>
               </div>

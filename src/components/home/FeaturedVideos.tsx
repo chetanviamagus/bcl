@@ -16,7 +16,7 @@ function FeaturedVideos() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-cricket-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Featured Videos
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ function FeaturedVideos() {
             >
               <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 {/* Video Thumbnail */}
-                <div className="aspect-video bg-gradient-to-br from-cricket-green to-green-800 relative overflow-hidden">
+                <div className="aspect-video bg-gradient-to-br from-primary-green to-primary-green-800 relative overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <motion.div
                       whileHover={{ scale: 1.1 }}
@@ -52,17 +52,17 @@ function FeaturedVideos() {
                   </div>
                   
                   {/* Views Badge */}
-                  <div className="absolute top-4 right-4 bg-cricket-gold text-cricket-dark px-2 py-1 rounded text-sm font-medium">
+                  <div className="absolute top-4 right-4 bg-gold text-gray-900 px-2 py-1 rounded text-sm font-medium">
                     {video.views.toLocaleString()} views
                   </div>
                 </div>
 
                 {/* Video Info */}
                 <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-cricket-gold transition-colors duration-200">
+                  <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-gold transition-colors duration-200">
                     {video.title}
                   </h3>
-                  <p className="text-gray-300 text-sm mb-4 line-clamp-2">
+                  <p className="text-gray-800 text-sm mb-4 line-clamp-2">
                     {video.description}
                   </p>
                   

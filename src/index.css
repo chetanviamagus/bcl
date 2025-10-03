@@ -1,11 +1,65 @@
 @import "tailwindcss";
 
-:root {
-    --cricket-green: #1B5E20;
-    --cricket-gold: #FFD700;
-    --cricket-white: #FFFFFF;
-    --cricket-dark: #333333;
-    --cricket-light: #F5F5F5;
+@theme {
+  /* Primary colors with improved contrast ratios */
+  --color-primary-green: #1B5E20;
+  --color-primary-green-50: #f0f9f0;
+  --color-primary-green-100: #dcf2dc;
+  --color-primary-green-200: #bce5bc;
+  --color-primary-green-300: #8dd18d;
+  --color-primary-green-400: #57b857;
+  --color-primary-green-500: #1B5E20;
+  --color-primary-green-600: #164d1a;
+  --color-primary-green-700: #123e15;
+  --color-primary-green-800: #0f3212;
+  --color-primary-green-900: #0c280f;
+  
+  /* Gold colors */
+  --color-gold: #ffb300;
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fff3c4;
+  --color-gold-200: #ffe082;
+  --color-gold-300: #ffd700;
+  --color-gold-400: #ffc107;
+  --color-gold-500: #ffb300;
+  --color-gold-600: #ff9800;
+  --color-gold-700: #f57c00;
+  --color-gold-800: #ef6c00;
+  --color-gold-900: #e65100;
+  
+  /* Custom font families */
+  --font-family-cricket: 'Inter', 'Poppins', sans-serif;
+  --font-family-scoreboard: 'Orbitron', monospace;
+  
+  /* Custom animations */
+  --animate-bounce-slow: bounce 2s infinite;
+  --animate-pulse-slow: pulse 3s infinite;
+  --animate-spin-slow: spin 3s linear infinite;
+  --animate-fade-in: fadeIn 0.5s ease-in-out;
+  --animate-slide-up: slideUp 0.5s ease-out;
+  --animate-slide-in-right: slideInRight 0.5s ease-out;
+  --animate-cricket-ball: cricketBall 2s ease-in-out infinite;
+}
+
+/* Custom Animation Keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(20px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes cricketBall {
+  0%, 100% { transform: rotate(0deg) translateX(0px); }
+  50% { transform: rotate(180deg) translateX(10px); }
 }
 
 /* Base Styles */
@@ -24,8 +78,7 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--cricket-light);
-    color: var(--cricket-dark);
+    @apply bg-gray-50 text-gray-900;
     line-height: 1.6;
 }
 
@@ -39,7 +92,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--cricket-green);
+    @apply bg-primary-green;
     border-radius: 4px;
 }
 
@@ -91,23 +144,7 @@ h6 {
     font-weight: 600;
 }
 
-/* Button Styles */
-.btn {
-    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 ease-in-out;
-    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
-}
-
-.btn-primary {
-    @apply bg-green-800 text-white hover:bg-green-700 focus:ring-green-800;
-}
-
-.btn-secondary {
-    @apply bg-yellow-400 text-gray-800 hover:bg-yellow-500 focus:ring-yellow-400;
-}
-
-.btn-outline {
-    @apply border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white focus:ring-green-800;
-}
+/* Button Styles - Using Tailwind utilities directly in components */
 
 /* Card Styles */
 .card {
@@ -194,8 +231,13 @@ h6 {
 
 /* Loading Spinner */
 .loading-spinner {
-    @apply inline-block w-8 h-8 border-4 border-gray-200 border-t-green-800 rounded-full;
+    @apply inline-block w-8 h-8 border-4 border-gray-300 border-t-green-600 rounded-full;
     animation: spin 1s linear infinite;
+}
+
+/* Hide header when in projector fullscreen mode */
+body.projector-fullscreen header {
+    display: none !important;
 }
 
 @keyframes spin {
@@ -208,29 +250,31 @@ h6 {
     }
 }
 
-/* Team Color Classes */
-.team-mr-titans {
-    @apply bg-green-800 text-white;
-}
+/* Team Color Classes with improved contrast - Using Tailwind utilities directly in components */
 
 .team-bellandur-monsters {
-    @apply bg-red-800 text-white;
+    @apply bg-red-700 text-white;
+    background-color: #b91c1c; /* Better contrast red */
 }
 
 .team-ykr-cricketers {
-    @apply bg-blue-600 text-white;
+    @apply bg-blue-700 text-white;
+    background-color: #1d4ed8; /* Better contrast blue */
 }
 
 .team-bellandur-sharks {
-    @apply bg-orange-500 text-white;
+    @apply bg-orange-600 text-white;
+    background-color: #ea580c; /* Better contrast orange */
 }
 
 .team-super-giants {
-    @apply bg-purple-600 text-white;
+    @apply bg-purple-700 text-white;
+    background-color: #7c3aed; /* Better contrast purple */
 }
 
 .team-royal-changlesrs {
     @apply bg-red-600 text-white;
+    background-color: #dc2626; /* Better contrast red */
 }
 
 /* Responsive Utilities */
@@ -250,7 +294,30 @@ h6 {
 
 /* Focus Styles for Accessibility */
 .focus-visible {
-    @apply focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-green focus:ring-offset-2;
+}
+
+/* High contrast focus indicators */
+.focus-high-contrast:focus {
+    @apply outline-2 outline-primary-green outline-offset-2;
+}
+
+/* Ensure sufficient contrast for text */
+.text-high-contrast {
+    @apply text-gray-900;
+}
+
+.text-medium-contrast {
+    @apply text-gray-600;
+}
+
+/* Background with sufficient contrast */
+.bg-high-contrast {
+    @apply bg-white;
+}
+
+.bg-medium-contrast {
+    @apply bg-gray-50;
 }
 
 /* Custom Material Icons */

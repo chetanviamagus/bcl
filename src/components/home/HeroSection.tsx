@@ -4,7 +4,7 @@ import { Link } from '@tanstack/react-router'
 
 function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-r from-cricket-green to-green-800 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-r from-primary-green to-primary-green-800 text-white overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[url('/images/cricket-pattern.svg')] bg-repeat"></div>
@@ -27,7 +27,7 @@ function HeroSection() {
                 className="text-4xl md:text-6xl font-bold leading-tight"
               >
                 Bellandur
-                <span className="block text-cricket-gold">Cricket League</span>
+                <span className="block text-gold">Cricket League</span>
               </motion.h1>
               
               <motion.p
@@ -63,7 +63,7 @@ function HeroSection() {
                 
                 <Link
                   to="/teams"
-                  className="btn btn-outline border-white text-white hover:bg-white hover:text-cricket-green text-lg px-8 py-4 inline-flex items-center justify-center"
+                  className="btn btn-outline border-white text-white hover:bg-white hover:text-primary-green text-lg px-8 py-4 inline-flex items-center justify-center"
                 >
                   <span className="material-icons mr-2">groups</span>
                   Explore Teams
@@ -79,15 +79,15 @@ function HeroSection() {
               className="grid grid-cols-3 gap-6 pt-8"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-cricket-gold">6</div>
+                <div className="text-3xl font-bold text-gold">6</div>
                 <div className="text-sm text-gray-300">Teams</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cricket-gold">30</div>
+                <div className="text-3xl font-bold text-gold">30</div>
                 <div className="text-sm text-gray-300">Matches</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-cricket-gold">2024</div>
+                <div className="text-3xl font-bold text-gold">2024</div>
                 <div className="text-sm text-gray-300">Season</div>
               </div>
             </motion.div>
@@ -102,7 +102,7 @@ function HeroSection() {
           >
             <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               {/* Placeholder for hero image/video */}
-              <div className="aspect-video bg-gradient-to-br from-cricket-gold/20 to-cricket-green/20 rounded-xl flex items-center justify-center">
+              <div className="aspect-video bg-gradient-to-br from-gold/20 to-primary-green/20 rounded-xl flex items-center justify-center">
                 <div className="text-center">
                   <motion.div
                     animate={{ 
@@ -114,9 +114,9 @@ function HeroSection() {
                       repeat: Infinity,
                       ease: "easeInOut"
                     }}
-                    className="w-24 h-24 bg-cricket-gold rounded-full flex items-center justify-center mx-auto mb-4"
+                    className="w-24 h-24 bg-gold rounded-full flex items-center justify-center mx-auto mb-4"
                   >
-                    <span className="material-icons text-4xl text-cricket-dark">sports_cricket</span>
+                    <span className="material-icons text-4xl text-gray-900">sports_cricket</span>
                   </motion.div>
                   <h3 className="text-2xl font-bold text-white mb-2">Live Action</h3>
                   <p className="text-gray-300">Watch thrilling cricket matches</p>
@@ -127,9 +127,9 @@ function HeroSection() {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 w-8 h-8 bg-cricket-gold rounded-full flex items-center justify-center"
+                className="absolute -top-4 -right-4 w-8 h-8 bg-gold rounded-full flex items-center justify-center"
               >
-                <span className="material-icons text-cricket-dark text-sm">star</span>
+                <span className="material-icons text-gray-900 text-sm">star</span>
               </motion.div>
               
               <motion.div

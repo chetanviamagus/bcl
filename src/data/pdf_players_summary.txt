@@ -1,0 +1,39 @@
+PDF Player Data Extraction Summary
+==================================================
+
+Total players extracted: 140
+Source file: New-2025-BCL-Players.pptx.pdf
+Extraction date: 2025-10-03 21:40:07
+
+Category breakdown:
+  All Rounder: 67 players
+  Batsman: 69 players
+  Bowler: 4 players
+
+ICON players: 16
+Regular players: 124
+
+Age range: 12 - 48
+Average age: 30.4
+
+First 20 players:
+   1. Manjunath.P - Batsman - Age: 42 - ICON: Yes
+   2. Ranjith - All Rounder - Age: 25 - ICON: Yes
+   3. Vinay G - Batsman - Age: 23 - ICON: Yes
+   4. Afthab - Batsman - Age: 23 - ICON: Yes
+   5. Shashidhar - Batsman - Age: 35 - ICON: Yes
+   6. Kiran - Batsman - Age: 29 - ICON: Yes
+   7. Vasanth Kumar - Batsman - Age: 28 - ICON: Yes
+   8. Sudeep G - All Rounder - Age: 20 - ICON: Yes
+   9. Naveen Reddy - All Rounder - Age: 40 - ICON: Yes
+  10. Sandeep Reddy - All Rounder - Age: 34 - ICON: Yes
+  11. Bharath - All Rounder - Age: 27 - ICON: Yes
+  12. Dishu - All Rounder - Age: 32 - ICON: Yes
+  13. Sanjay BK - All Rounder - Age: 27 - ICON: Yes
+  14. Kashif - All Rounder - Age: 20 - ICON: Yes
+  15. BHARATH - All Rounder - Age: 26 - ICON: Yes
+  16. Indresh Kumar - All Rounder - Age: 34 - ICON: Yes
+  17. Sanjay Kumar - Batsman - Age: 26 - ICON: No
+  18. Noorulla - Batsman - Age: 37 - ICON: No
+  19. Arun Kumar - Batsman - Age: 26 - ICON: No
+  20. Anil - Batsman - Age: 38 - ICON: No

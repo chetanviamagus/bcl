@@ -1,0 +1,164 @@
+Complete PDF Player Data Extraction Summary
+============================================================
+
+Total pages in PDF: 145
+Pages with players: 144
+Pages without players: 1
+Total players extracted: 140
+Source file: New-2025-BCL-Players.pptx.pdf
+Extraction date: 2025-10-03 21:46:30
+
+Pages without players: [100]
+
+Category breakdown:
+  All Rounder: 67 players
+  Batsman: 69 players
+  Bowler: 4 players
+
+ICON players: 16
+Regular players: 124
+
+Age range: 12 - 48
+Average age: 30.4
+
+All players by page:
+  Page   1: Manjunath.P - Batsman - Age: 42 - ICON: Yes
+  Page   2: Ranjith - All Rounder - Age: 25 - ICON: Yes
+  Page   3: Vinay G - Batsman - Age: 23 - ICON: Yes
+  Page   4: Afthab - Batsman - Age: 23 - ICON: Yes
+  Page   5: Shashidhar - Batsman - Age: 35 - ICON: Yes
+  Page   6: Kiran - Batsman - Age: 29 - ICON: Yes
+  Page   7: Vasanth Kumar - Batsman - Age: 28 - ICON: Yes
+  Page   8: Sudeep G - All Rounder - Age: 20 - ICON: Yes
+  Page   9: Naveen Reddy - All Rounder - Age: 40 - ICON: Yes
+  Page  10: Sandeep Reddy - All Rounder - Age: 34 - ICON: Yes
+  Page  11: Bharath - All Rounder - Age: 27 - ICON: Yes
+  Page  12: Dishu - All Rounder - Age: 32 - ICON: Yes
+  Page  13: Sanjay BK - All Rounder - Age: 27 - ICON: Yes
+  Page  14: Kashif - All Rounder - Age: 20 - ICON: Yes
+  Page  15: BHARATH - All Rounder - Age: 26 - ICON: Yes
+  Page  16: Indresh Kumar - All Rounder - Age: 34 - ICON: Yes
+  Page  17: Sanjay Kumar - Batsman - Age: 26 - ICON: No
+  Page  18: Noorulla - Batsman - Age: 37 - ICON: No
+  Page  19: Arun Kumar - Batsman - Age: 26 - ICON: No
+  Page  20: Anil - Batsman - Age: 38 - ICON: No
+  Page  21: Narayana swamy - Batsman - Age: 29 - ICON: No
+  Page  23: Chethan - Batsman - Age: 37 - ICON: No
+  Page  24: Mohan M - Batsman - Age: 22 - ICON: No
+  Page  25: Srikanth - Batsman - Age: 24 - ICON: No
+  Page  26: Lingraj - Batsman - Age: 20 - ICON: No
+  Page  27: Pradeep - Batsman - Age: 42 - ICON: No
+  Page  28: Bharath R - All Rounder - Age: 32 - ICON: No
+  Page  29: Jaga - All Rounder - Age: 36 - ICON: No
+  Page  30: Dharshan M - All Rounder - Age: 23 - ICON: No
+  Page  31: Manjunatha BG - All Rounder - Age: 32 - ICON: No
+  Page  33: Arya - All Rounder - Age: 30 - ICON: No
+  Page  34: Rama Chandra - All Rounder - Age: 40 - ICON: No
+  Page  35: Satyajit Reddy - All Rounder - Age: 20 - ICON: No
+  Page  36: Nagavendra M - All Rounder - Age: 35 - ICON: No
+  Page  37: Mithun Reddy - All Rounder - Age: 35 - ICON: No
+  Page  38: Krishnamurthy - Bowler - Age: 32 - ICON: No
+  Page  39: Manjunath M - Bowler - Age: 44 - ICON: No
+  Page  40: Pradeep BG - Bowler - Age: 35 - ICON: No
+  Page  41: Chetan Kumar N - Bowler - Age: 39 - ICON: No
+  Page  42: Prakash - Batsman - Age: 32 - ICON: No
+  Page  43: Vajresh - Batsman - Age: 36 - ICON: No
+  Page  44: Ravindra - Batsman - Age: 40 - ICON: No
+  Page  45: Sridhar - Batsman - Age: 29 - ICON: No
+  Page  47: Giri - Batsman - Age: 44 - ICON: No
+  Page  48: Shashi kumar - Batsman - Age: 34 - ICON: No
+  Page  49: SUBRAMANI - Batsman - Age: 27 - ICON: No
+  Page  50: Shashank - Batsman - Age: 21 - ICON: No
+  Page  51: Chandrashekar - Batsman - Age: 37 - ICON: No
+  Page  52: Shankar M - Batsman - Age: 30 - ICON: No
+  Page  53: Murugesh .M - Batsman - Age: 30 - ICON: No
+  Page  54: Preyas - Batsman - Age: 12 - ICON: No
+  Page  55: Ishthiyak - Batsman - Age: 26 - ICON: No
+  Page  56: Umesh BK - Batsman - Age: 37 - ICON: No
+  Page  57: Ramesh - Batsman - Age: 38 - ICON: No
+  Page  58: Karagappa - Batsman - Age: 43 - ICON: No
+  Page  59: Karthik - All Rounder - Age: 36 - ICON: No
+  Page  60: Madhu Prasad - Batsman - Age: 26 - ICON: No
+  Page  61: Mahadev - Batsman - Age: 26 - ICON: No
+  Page  62: Uday Kumar - Batsman - Age: 37 - ICON: No
+  Page  63: Dhruva Kumar - Batsman - Age: 37 - ICON: No
+  Page  64: Yeshwanth V - Batsman - Age: 27 - ICON: No
+  Page  65: YASH - Batsman - Age: 24 - ICON: No
+  Page  66: Vikas - Batsman - Age: 24 - ICON: No
+  Page  67: Tarun Reddy - Batsman - Age: 26 - ICON: No
+  Page  68: Vinay - Batsman - Age: 25 - ICON: No
+  Page  69: Goutham - Batsman - Age: 23 - ICON: No
+  Page  70: Sunil - Batsman - Age: 33 - ICON: No
+  Page  71: Sridhar M - Batsman - Age: 20 - ICON: No
+  Page  72: Basavaraj - Batsman - Age: 23 - ICON: No
+  Page  73: Karthik P - Batsman - Age: 26 - ICON: No
+  Page  74: Kiran M - Batsman - Age: 23 - ICON: No
+  Page  75: Chetan N - Batsman - Age: 33 - ICON: No
+  Page  76: Dhanush N - Batsman - Age: 27 - ICON: No
+  Page  77: Sachin N - Batsman - Age: 26 - ICON: No
+  Page  78: Yuvaraj - Batsman - Age: 25 - ICON: No
+  Page  79: Kishore - Batsman - Age: 31 - ICON: No
+  Page  80: Shivaraj K - Batsman - Age: 38 - ICON: No
+  Page  81: Ravi Kumar BK - Batsman - Age: 37 - ICON: No
+  Page  82: Nandan Chaitanya - Batsman - Age: 17 - ICON: No
+  Page  83: VR Kshatriya - All Rounder - Age: 32 - ICON: No
+  Page  85: Kantha Kumar - All Rounder - Age: 32 - ICON: No
+  Page  86: Devendra - All Rounder - Age: 36 - ICON: No
+  Page  87: Manjunatha - All Rounder - Age: 31 - ICON: No
+  Page  88: A. Ravindranath - All Rounder - Age: 48 - ICON: No
+  Page  89: Santhosh Reddy - All Rounder - Age: 39 - ICON: No
+  Page  90: Roshan - All Rounder - Age: 48 - ICON: No
+  Page  91: Sandeep Kumar - All Rounder - Age: 31 - ICON: No
+  Page  92: Shiva - All Rounder - Age: 36 - ICON: No
+  Page  93: Rajesh V - All Rounder - Age: 39 - ICON: No
+  Page  94: Harish M - All Rounder - Age: 38 - ICON: No
+  Page  95: Naveen Kumar - All Rounder - Age: 29 - ICON: No
+  Page  96: Anil Kumar HR - All Rounder - Age: 24 - ICON: No
+  Page  97: Mahesh - All Rounder - Age: 45 - ICON: No
+  Page  98: Dhanush B - All Rounder - Age: 28 - ICON: No
+  Page  99: M Vamshi - All Rounder - Age: 16 - ICON: No
+  Page 101: Mithun M - All Rounder - Age: 25 - ICON: No
+  Page 102: Manjunath P - All Rounder - Age: 35 - ICON: No
+  Page 103: Mohamad Ali - All Rounder - Age: 26 - ICON: No
+  Page 104: Munikrishna - All Rounder - Age: 28 - ICON: No
+  Page 105: Anil Kumar B K - All Rounder - Age: 35 - ICON: No
+  Page 106: Anil Reddy - All Rounder - Age: 26 - ICON: No
+  Page 107: Rajesh R - All Rounder - Age: 35 - ICON: No
+  Page 108: Praveen Kumar N - All Rounder - Age: 40 - ICON: No
+  Page 109: Shiva Kumar N - All Rounder - Age: 41 - ICON: No
+  Page 110: Gopinath V - All Rounder - Age: 40 - ICON: No
+  Page 111: Sharanu V - All Rounder - Age: 21 - ICON: No
+  Page 112: Nikhil Prabhakar - All Rounder - Age: 28 - ICON: No
+  Page 113: Ambrish - All Rounder - Age: 32 - ICON: No
+  Page 114: Kishan - All Rounder - Age: 14 - ICON: No
+  Page 115: Nithin Kumar - All Rounder - Age: 27 - ICON: No
+  Page 116: Kumar - All Rounder - Age: 26 - ICON: No
+  Page 117: Manjunath - All Rounder - Age: 47 - ICON: No
+  Page 118: Varchas Reddy - All Rounder - Age: 22 - ICON: No
+  Page 119: Aditya. M - All Rounder - Age: 34 - ICON: No
+  Page 120: Lavith Reddy - Batsman - Age: 31 - ICON: No
+  Page 121: Bhargav. K - Batsman - Age: 17 - ICON: No
+  Page 122: Saravana - Batsman - Age: 24 - ICON: No
+  Page 123: Vinay Kumar - All Rounder - Age: 27 - ICON: No
+  Page 124: Sandeep Kumar S - All Rounder - Age: 33 - ICON: No
+  Page 125: Shivanand - All Rounder - Age: 31 - ICON: No
+  Page 126: Mithun Murthy - All Rounder - Age: 20 - ICON: No
+  Page 127: Jitin S - All Rounder - Age: 20 - ICON: No
+  Page 128: BC Harish Kumar - All Rounder - Age: 40 - ICON: No
+  Page 129: Sandeep Wadhawan - All Rounder - Age: 43 - ICON: No
+  Page 130: Kunal Bhargava - All Rounder - Age: 38 - ICON: No
+  Page 131: Kailash - All Rounder - Age: 32 - ICON: No
+  Page 132: Narayanaswamy - All Rounder - Age: 40 - ICON: No
+  Page 133: Mohan Rao - All Rounder - Age: 27 - ICON: No
+  Page 134: Murugesh S - All Rounder - Age: 25 - ICON: No
+  Page 135: Uday Kiran - Batsman - Age: 25 - ICON: No
+  Page 136: Govardhan - Batsman - Age: 22 - ICON: No
+  Page 137: Baba Prasad - Batsman - Age: 32 - ICON: No
+  Page 138: Bharath S - Batsman - Age: 29 - ICON: No
+  Page 139: LOKESH J - Batsman - Age: 22 - ICON: No
+  Page 140: Azhar Khan - Batsman - Age: 39 - ICON: No
+  Page 141: Sachin G - Batsman - Age: 27 - ICON: No
+  Page 142: Dhanush R - Batsman - Age: 20 - ICON: No
+  Page 143: S Manish - Batsman - Age: 20 - ICON: No
+  Page 144: R Prajwal - Batsman - Age: 27 - ICON: No
+  Page 145: Sujan Reddy B S - Batsman - Age: 24 - ICON: No

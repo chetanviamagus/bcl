@@ -7,7 +7,7 @@ function PlayerSpotlight() {
   const featuredPlayers = mockPlayers.slice(0, 3)
 
   return (
-    <section className="py-16 bg-cricket-light">
+    <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ function PlayerSpotlight() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-cricket-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Player Spotlight
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -37,10 +37,10 @@ function PlayerSpotlight() {
               <div className="card card-hover h-full">
                 {/* Player Photo */}
                 <div className="text-center mb-6">
-                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-cricket-green to-green-800 rounded-full flex items-center justify-center mb-4">
+                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-primary-green to-primary-green-800 rounded-full flex items-center justify-center mb-4">
                     <span className="material-icons text-white text-3xl">person</span>
                   </div>
-                  <h3 className="text-xl font-bold text-cricket-dark group-hover:text-cricket-green transition-colors duration-200">
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-green transition-colors duration-200">
                     {player.name}
                   </h3>
                   <div className="text-sm text-gray-600">
@@ -51,14 +51,14 @@ function PlayerSpotlight() {
                 {/* Player Stats */}
                 <div className="space-y-3">
                   <div className="grid grid-cols-2 gap-4 text-center">
-                    <div className="bg-cricket-light rounded-lg p-3">
-                      <div className="text-2xl font-bold text-cricket-green">
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="text-2xl font-bold text-primary-green">
                         {player.stats.runs}
                       </div>
                       <div className="text-xs text-gray-600">Runs</div>
                     </div>
-                    <div className="bg-cricket-light rounded-lg p-3">
-                      <div className="text-2xl font-bold text-cricket-green">
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="text-2xl font-bold text-primary-green">
                         {player.stats.wickets}
                       </div>
                       <div className="text-xs text-gray-600">Wickets</div>
@@ -66,14 +66,14 @@ function PlayerSpotlight() {
                   </div>
 
                   <div className="grid grid-cols-2 gap-4 text-center">
-                    <div className="bg-cricket-light rounded-lg p-3">
-                      <div className="text-lg font-bold text-cricket-dark">
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="text-lg font-bold text-gray-900">
                         {player.stats.average}
                       </div>
                       <div className="text-xs text-gray-600">Average</div>
                     </div>
-                    <div className="bg-cricket-light rounded-lg p-3">
-                      <div className="text-lg font-bold text-cricket-dark">
+                    <div className="bg-gray-50 rounded-lg p-3">
+                      <div className="text-lg font-bold text-gray-900">
                         {player.stats.strikeRate}
                       </div>
                       <div className="text-xs text-gray-600">Strike Rate</div>
@@ -86,25 +86,25 @@ function PlayerSpotlight() {
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="text-gray-600">Age:</span>
-                      <span className="font-medium text-cricket-dark">{player.age}</span>
+                      <span className="font-medium text-gray-900">{player.age}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Nationality:</span>
-                      <span className="font-medium text-cricket-dark">{player.nationality}</span>
+                      <span className="font-medium text-gray-900">{player.nationality}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Batting:</span>
-                      <span className="font-medium text-cricket-dark">{player.battingStyle}</span>
+                      <span className="font-medium text-gray-900">{player.battingStyle}</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Bowling:</span>
-                      <span className="font-medium text-cricket-dark">{player.bowlingStyle}</span>
+                      <span className="font-medium text-gray-900">{player.bowlingStyle}</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 bg-cricket-green/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <div className="absolute inset-0 bg-primary-green/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </div>
             </motion.div>
           ))}

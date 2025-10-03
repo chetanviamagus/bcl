@@ -14,7 +14,7 @@ function Layout({ children }: LayoutProps) {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen bg-cricket-light flex flex-col">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header 
         isMobileMenuOpen={isMobileMenuOpen}
         onMobileMenuToggle={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
