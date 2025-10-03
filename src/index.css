@@ -1,0 +1,284 @@
+@import "tailwindcss";
+
+:root {
+    --cricket-green: #1B5E20;
+    --cricket-gold: #FFD700;
+    --cricket-white: #FFFFFF;
+    --cricket-dark: #333333;
+    --cricket-light: #F5F5F5;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--cricket-light);
+    color: var(--cricket-dark);
+    line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cricket-green);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #164d1a;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 1rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Scoreboard Font */
+.scoreboard {
+    font-family: 'Orbitron', monospace;
+    font-weight: 600;
+}
+
+/* Button Styles */
+.btn {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300 ease-in-out;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+    @apply bg-green-800 text-white hover:bg-green-700 focus:ring-green-800;
+}
+
+.btn-secondary {
+    @apply bg-yellow-400 text-gray-800 hover:bg-yellow-500 focus:ring-yellow-400;
+}
+
+.btn-outline {
+    @apply border-2 border-green-800 text-green-800 hover:bg-green-800 hover:text-white focus:ring-green-800;
+}
+
+/* Card Styles */
+.card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 ease-in-out;
+    @apply hover:shadow-xl hover:-translate-y-1;
+}
+
+.card-hover {
+    @apply transform transition-all duration-300 ease-in-out;
+    @apply hover:scale-105 hover:shadow-2xl;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+.bounce-slow {
+    animation: bounce 2s infinite;
+}
+
+.pulse-slow {
+    animation: pulse 3s infinite;
+}
+
+.cricket-ball-spin {
+    animation: cricketBall 2s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cricketBall {
+
+    0%,
+    100% {
+        transform: rotate(0deg) translateX(0px);
+    }
+
+    50% {
+        transform: rotate(180deg) translateX(10px);
+    }
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    @apply inline-block w-8 h-8 border-4 border-gray-200 border-t-green-800 rounded-full;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Team Color Classes */
+.team-mr-titans {
+    @apply bg-green-800 text-white;
+}
+
+.team-bellandur-monsters {
+    @apply bg-red-800 text-white;
+}
+
+.team-ykr-cricketers {
+    @apply bg-blue-600 text-white;
+}
+
+.team-bellandur-sharks {
+    @apply bg-orange-500 text-white;
+}
+
+.team-super-giants {
+    @apply bg-purple-600 text-white;
+}
+
+.team-royal-changlesrs {
+    @apply bg-red-600 text-white;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Focus Styles for Accessibility */
+.focus-visible {
+    @apply focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2;
+}
+
+/* Custom Material Icons */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
