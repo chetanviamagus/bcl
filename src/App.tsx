@@ -13,6 +13,7 @@ import FantasyPage from './pages/FantasyPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import AuctionPage from './pages/AuctionPage'
+import AdminPage from './pages/AdminPage'
 
 // Create a root route
 const rootRoute = createRootRoute({
@@ -102,6 +103,12 @@ const auctionRoute = createRoute({
   component: AuctionPage,
 })
 
+const adminRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/admin',
+  component: AdminPage,
+})
+
 // Create the route tree
 const routeTree = rootRoute.addChildren([
   indexRoute,
@@ -117,6 +124,7 @@ const routeTree = rootRoute.addChildren([
   aboutRoute,
   contactRoute,
   auctionRoute,
+  adminRoute,
 ])
 
 // Create the router

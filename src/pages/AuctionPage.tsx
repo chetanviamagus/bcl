@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { mockAuctionPlayers, mockAuctionSession, mockTeamBudgets, mockTeams } from '@/data/mockData'
 import { AuctionPlayer, TeamBudget } from '@/types'
+import PlayerProjector from '@/components/auction/PlayerProjector'
 
 function AuctionPage() {
   const [selectedPlayer, setSelectedPlayer] = useState<AuctionPlayer | null>(null)
@@ -9,6 +10,8 @@ function AuctionPage() {
   const [selectedTeam, setSelectedTeam] = useState<string>('')
   const [players, setPlayers] = useState<AuctionPlayer[]>(mockAuctionPlayers)
   const [teamBudgets, setTeamBudgets] = useState<TeamBudget[]>(mockTeamBudgets)
+  const [viewMode, setViewMode] = useState<'list' | 'projector'>('list')
+  const [currentPlayerIndex, setCurrentPlayerIndex] = useState<number>(0)
 
   const handleBid = (playerId: string, teamId: string, amount: number) => {
     const updatedPlayers = players.map(player => {
@@ -16,7 +19,9 @@ function AuctionPage() {
         return {
           ...player,
           currentBid: amount,
-          soldTo: teamId
+          soldTo: teamId,
+          status: 'sold' as const,
+          soldPrice: amount
         }
       }
       return player
@@ -38,6 +43,10 @@ function AuctionPage() {
     setTeamBudgets(updatedBudgets)
     setBidAmount(0)
     setSelectedTeam('')
+  }
+
+  const handlePlayerChange = (index: number) => {
+    setCurrentPlayerIndex(index)
   }
 
   const formatCurrency = (amount: number) => {
@@ -67,6 +76,20 @@ function AuctionPage() {
     return colors[status as keyof typeof colors] || 'bg-gray-100 text-gray-800'
   }
 
+  // Show projector view if in projector mode
+  if (viewMode === 'projector') {
+    return (
+      <PlayerProjector
+        players={players}
+        currentPlayerIndex={currentPlayerIndex}
+        onPlayerChange={handlePlayerChange}
+        onBid={handleBid}
+        teamBudgets={teamBudgets}
+        onBackToList={() => setViewMode('list')}
+      />
+    )
+  }
+
   return (
     <div className="min-h-screen bg-cricket-light">
       {/* Header Section */}
@@ -87,6 +110,14 @@ function AuctionPage() {
               <div>
                 <span className="font-semibold">Total Amount:</span> {formatCurrency(mockAuctionSession.totalAmount)}
               </div>
+            </div>
+            <div className="mt-4">
+              <button
+                onClick={() => setViewMode('projector')}
+                className="bg-white text-cricket-green px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
+              >
+                Switch to Projector View
+              </button>
             </div>
           </div>
         </div>
